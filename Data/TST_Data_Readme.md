@@ -36,11 +36,16 @@ with:
 | Machine_Load         | Load measured by the machine                       | [kN] | double    |  y |
 | Machine_Displacement | Displacement measured by the machine               | [mm]   | double    |  y |
 | index            | Image number                                       | [-]   | int       |   |
+| crack_length_FA     | Crack length measurement (for fatigue testing with fracture)        | [mm]  | double    |   |
+| crack_length_QS     | Crack length measurement (for quasi-static testing with fracture)   | [mm]  | double    |   |
+| corresponding_Load         | Load corresponds to crack_length_QS         | [kN] | double    |   |
+| corresponding_Displacement | Displacement corresponds to crack_length_QS | [mm]   | double    |   |
 | Camera\_N_cycles         | Number of cycles counted by the camera             | [-]   | int       |   |
-| exx              | Strain measured along main axis              | [-]  | double    |   |
-| eyy              | Strain measured along secondary axis         | [-]  | double    |   |
-| exy              | Strain measured along a specified axis       | [-]  | double    |   |
-| crack_length     | Crack length measurement (for fracture testings)   | [mm]  | double    |   |
+| u__1             | Displacement measured at point 1 along main axis        | [-]  | double    |   |
+| v__1             | Displacement measured at point 1 along secondary axis   | [-]  | double    |   |
+| exx__1           | Strain measured at point 1 along main axis              | [-]  | double    |   |
+| eyy__1           | Strain measured at point 1 along secondary axis         | [-]  | double    |   |
+| exy__1           | Strain measured at point 1 along a specified axis       | [-]  | double    |   |
 | Th_time              | Time as counted by temperature monitoring          | [sec] | int       |   |
 | Th\_N_cycles          | Number of cycles counted by temperature monitoring | [-]   | int       |   |
 | Th\_specimen_max      | Maximum temperature monitored                      | [°C]  | single    |   |
